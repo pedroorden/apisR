@@ -35,3 +35,13 @@ function(a, b){
   
 }
 
+#* ejemplo serializacion csv
+#* @serializer csv
+#* @param n numeros de filas
+#* @get /data
+
+function(n=10){
+  
+  head(mtcars, as.numeric(n))
+   
+}
